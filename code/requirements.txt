@@ -1,0 +1,21 @@
+# SV-Hop / AdaptHop environment
+# Tested with Python 3.11.17 on Linux (Ubuntu 22.04).
+rdkit==2026.3.6
+numpy==1.26.4
+pandas==3.0.6
+scikit-learn==1.9.1
+scipy==1.17.1
+lightgbm==4.7.0
+gemmi==0.7.5
+matplotlib==3.11.2
+openbabel-wheel==3.1.1.23
+
+# SV-Hop does not require torch. The AdaptHop modules (src/model.py,
+# src/train.py, src/eval.py) use torch>=2.0; install the CUDA build matching
+# the host if those are needed.
+# torch>=2.0
+
+# External binaries (not pip):
+#   tools/smina.static      https://sourceforge.net/projects/smina/files/
+#   obabel                  provided by openbabel-wheel
+#   aizynthfinder           optional, for synthesis feasibility
