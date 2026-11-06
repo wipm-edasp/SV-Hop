@@ -1,0 +1,8 @@
+{
+  "n_pairs": 298,
+  "n_candidates": 1489,
+  "mean_recall": 0.8235322380838971,
+  "top1_recall": 0.8268875627369733,
+  "frac_recall_ge_06": 0.977165883143049,
+  "mean_mcs_atoms": 27.519811954331765
+}

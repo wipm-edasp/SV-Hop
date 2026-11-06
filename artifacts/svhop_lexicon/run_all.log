@@ -1,0 +1,18 @@
+[rules] 334 train core-replacement rules
+{
+  "n_pairs": 77,
+  "exact_core_recall@20": 0.5844155844155844,
+  "mean_best_s2_sim": 0.7095603024303662,
+  "mean_valid": 18.571428571428573,
+  "mean_conserved": 3.0259740259740258,
+  "mean_sa_ok": 17.649350649350648,
+  "true_scaf_hit_frac": 0.5714285714285714,
+  "per_k": {
+    "1": 4,
+    "2": 31,
+    "3": 24,
+    "4": 12,
+    "5": 5,
+    "6": 1
+  }
+}

@@ -10,6 +10,7 @@
 | `pdb_hops/summary.json` | mining statistics |
 | `chembl/panel.jsonl` | 28,754 ChEMBL 37 measurements, 20 targets (pChEMBL, assay type, year) |
 | `chembl_core_rules.jsonl` | 59,735 deduplicated `(S1, S2, k)` core-replacement rules |
+| `top_rules.json` | compact rule table with support >= 3 (4,029 rules) |
 
 ## PDB coordinates
 

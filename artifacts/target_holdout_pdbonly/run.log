@@ -1,0 +1,81 @@
+[split] train pairs 2105 test pairs 504 test targets 6
+[rules] 388 (ChEMBL test targets excluded)
+[train] 0/700 rows=5
+[train] 50/700 rows=185
+[train] 100/700 rows=365
+[train] 150/700 rows=555
+[train] 200/700 rows=755
+[train] 250/700 rows=965
+[train] 300/700 rows=1130
+[train] 350/700 rows=1314
+[train] 400/700 rows=1509
+[train] 450/700 rows=1689
+[train] 500/700 rows=1879
+[train] 550/700 rows=2064
+[train] 600/700 rows=2248
+[train] 650/700 rows=2428
+[test] 0/504 rows=2603
+[test] 50/504 rows=2773
+[test] 100/504 rows=3015
+[test] 150/504 rows=3180
+[test] 200/504 rows=3350
+[test] 250/504 rows=3565
+[test] 300/504 rows=3730
+[test] 350/504 rows=3860
+[test] 400/504 rows=4045
+[test] 450/504 rows=4175
+[test] 500/504 rows=4380
+[rows] 4395 train=2598 test=1797
+[ranker] holdout spearman=0.178 auc=0.381
+{
+  "n_train_pairs": 520,
+  "n_test_pairs": 360,
+  "n_train_targets": 19,
+  "n_test_targets": 6,
+  "spearman": 0.17773565280073564,
+  "auc": 0.3812888637648389,
+  "arms": {
+    "property": {
+      "mean": 0.5083333333333333,
+      "ci_lo": 0.45555555555555555,
+      "ci_hi": 0.5611111111111111
+    },
+    "sim2d": {
+      "mean": 0.36944444444444446,
+      "ci_lo": 0.3194444444444444,
+      "ci_hi": 0.41944444444444445
+    },
+    "constrained": {
+      "mean": 0.8194444444444444,
+      "ci_lo": 0.7805555555555556,
+      "ci_hi": 0.8583333333333333
+    },
+    "random_expected": {
+      "mean": 0.31111111111111117,
+      "ci_lo": 0.2872222222222222,
+      "ci_hi": 0.33499999999999996
+    },
+    "copy": {
+      "mean": 0.0,
+      "ci_lo": 0.0,
+      "ci_hi": 0.0
+    }
+  },
+  "by_family": {
+    "enzyme_other": {
+      "property": 0.9090909090909091,
+      "sim2d": 0.2727272727272727,
+      "constrained": 0.9090909090909091
+    },
+    "gpcr": {
+      "property": 0.5657894736842105,
+      "sim2d": 0.18421052631578946,
+      "constrained": 0.5657894736842105
+    },
+    "kinase": {
+      "property": 0.47619047619047616,
+      "sim2d": 0.4249084249084249,
+      "constrained": 0.8864468864468864
+    }
+  }
+}
