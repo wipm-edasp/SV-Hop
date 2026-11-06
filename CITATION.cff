@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this software or benchmark, please cite the archived release and the associated manuscript."
+title: "Scaffold hopping from deposited crystal pairs: a docking-free contact-conservation benchmark and a structure-validated method"
+type: software
+version: 0.1.2
+date-released: 2026-11-06
+license: MIT
+authors:
+  - family-names: Xiao
+    given-names: Xiongjie
+    affiliation: "State Key Laboratory of Magnetic Resonance Spectroscopy and Imaging, National Center for Magnetic Resonance in Wuhan, Wuhan Institute of Physics and Mathematics, Chinese Academy of Sciences, Wuhan 430071, China"
+  - family-names: Huang
+    given-names: Yi
+    affiliation: "Wuhan Institute of Physics and Mathematics, Chinese Academy of Sciences, Wuhan 430071, China"
+  - family-names: Jiang
+    given-names: Bin
+    affiliation: "Wuhan Institute of Physics and Mathematics, Chinese Academy of Sciences, Wuhan 430071, China"
+  - family-names: Zhang
+    given-names: Xu
+    affiliation: "Wuhan Institute of Physics and Mathematics, Chinese Academy of Sciences, Wuhan 430071, China"
+  - family-names: Liu
+    given-names: Maili
+    affiliation: "Wuhan Institute of Physics and Mathematics, Chinese Academy of Sciences, Wuhan 430071, China"
+abstract: >-
+  Benchmark of 2,886 same-pocket, different-scaffold ligand pairs from the PDB, a
+  60,069-rule core-replacement lexicon, a constrained interaction ranker, and an
+  equal-diversity control. Includes scaffold- and target-held-out evaluations,
+  ablations, and a 22-compound prospective panel.
+keywords:
+  - scaffold hopping
+  - structure-based drug design
+  - interaction fingerprint
+  - benchmark
+  - ChEMBL
+  - PDB
