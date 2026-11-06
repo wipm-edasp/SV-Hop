@@ -1,7 +1,7 @@
 # SV-Hop v0.1.2
 
 Benchmark, lexicon, model artifacts and code for **"Scaffold hopping from deposited crystal
-pairs: a docking-free contact-conservation benchmark and a structure-validated method"**.
+pairs: docking-free contact-conservation benchmark and structure-validated method"**.
 
 ## Contents
 
