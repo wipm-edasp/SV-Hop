@@ -15,9 +15,19 @@ if [ ! -d data/pdb_hops/pdb ] || [ -z "$(ls -A data/pdb_hops/pdb 2>/dev/null)" ]
   $PY code/fetch_pdb.py --benchmark data/pdb_hops/benchmark.json --out data/pdb_hops/pdb
 fi
 
+echo "== 0b. EDIA ligand-density table =="
+# 503 entries scored, 19 without structure factors; cached, so this is skipped once
+# data/edia/edia_ligands.csv exists. Each submission costs a round trip to the service.
+if [ ! -f data/edia/edia_ligands.csv ]; then
+  $PY -u code/fetch_edia.py
+fi
+
 echo "== 1. Benchmark =="
 $PY -u code/mine_pdb_hops.py
-$PY -u code/build_svhop_benchmark.py
+# the analysed set (2,886 pairs): gate disabled, EDIA scores attached to every pair
+$PY -u code/build_svhop_benchmark.py --no-edia
+# the gated set used for new constructions (1,587 pairs at EDIA_m >= 0.8)
+$PY -u code/build_svhop_benchmark.py --edia 0.8 --out data/pdb_hops/benchmark_edia08.json
 
 echo "== 2. ChEMBL panel and rules =="
 if [ ! -f data/chembl/panel.jsonl ]; then
@@ -40,5 +50,8 @@ $PY -u code/bootstrap_svhop.py
 
 echo "== 7. Figures =="
 $PY -u code/make_figures_svhop.py
+
+echo "== 8. EDIA audit and sensitivity =="
+$PY -u code/analyze_edia.py
 
 echo "done"
