@@ -1,0 +1,123 @@
+{
+  "ligand_instances": 528,
+  "ligand_buckets": {
+    "well_supported_ge_0.8": 364,
+    "moderate_0.4_0.8": 74,
+    "poor_lt_0.4": 12,
+    "unscored": 78
+  },
+  "ligand_pass_rate": 68.93939393939394,
+  "pair_total": 2886,
+  "pair_scored": 2402,
+  "pair_pass": 1587,
+  "pair_pass_rate_of_all": 54.98960498960499,
+  "pair_pass_rate_of_scored": 66.0699417152373,
+  "pair_pass_tier2": 2266,
+  "pair_pass_tier2_rate": 78.51697851697851,
+  "per_family": {
+    "gpcr": {
+      "pairs": 92,
+      "scored": 92,
+      "pass": 65
+    },
+    "kinase": {
+      "pairs": 1377,
+      "scored": 1177,
+      "pass": 818
+    },
+    "enzyme_other": {
+      "pairs": 615,
+      "scored": 556,
+      "pass": 276
+    },
+    "nuclear_receptor": {
+      "pairs": 361,
+      "scored": 300,
+      "pass": 213
+    },
+    "protease": {
+      "pairs": 441,
+      "scored": 277,
+      "pass": 215
+    }
+  },
+  "splits": {
+    "ssplit": {
+      "train": {
+        "pairs": 2022,
+        "pass": 1084
+      },
+      "val": {
+        "pairs": 435,
+        "pass": 254
+      },
+      "test": {
+        "pairs": 429,
+        "pass": 249
+      }
+    },
+    "tsplit": {
+      "train": {
+        "pairs": 2105,
+        "pass": 1137
+      },
+      "val": {
+        "pairs": 277,
+        "pass": 82
+      },
+      "test": {
+        "pairs": 504,
+        "pass": 368
+      }
+    }
+  },
+  "scaffold_eval": {
+    "pairs": 298,
+    "pass": 186,
+    "joint_all": 62.080536912751676,
+    "joint_pass": 60.215053763440864,
+    "selected_contact_mean_all": 0.8453537359678845,
+    "pass_tier2": 242,
+    "joint_tier2": 55.78512396694215,
+    "selected_contact_mean_pass": 0.8505756351877828
+  },
+  "criterion_validation": {
+    "all": {
+      "name": "all",
+      "n": 69,
+      "contact_mean": 0.86222281323675,
+      "contact_median": 0.8636363636363636,
+      "n_contact_ge_0.6": 69,
+      "rho_dp": -0.09941649339736773,
+      "rho_pharm": 0.49173403765630996
+    },
+    "same_target": {
+      "name": "same_target_50",
+      "n": 50,
+      "contact_mean": 0.8746951886893064,
+      "contact_median": 0.9090909090909091,
+      "n_contact_ge_0.6": 50,
+      "rho_dp": -0.15190950297726638,
+      "rho_pharm": 0.5123706771062738
+    },
+    "same_target_pass": {
+      "name": "same_target_pass",
+      "n": 42,
+      "contact_mean": 0.8812150400175609,
+      "contact_median": 0.9302884615384616,
+      "n_contact_ge_0.6": 42,
+      "rho_dp": -0.2690616382732342,
+      "rho_pharm": 0.4923775984835895
+    },
+    "edia_pass": {
+      "name": "edia_pass",
+      "n": 60,
+      "contact_mean": 0.8667490079542509,
+      "contact_median": 0.8818181818181818,
+      "n_contact_ge_0.6": 60,
+      "rho_dp": -0.17181503405394583,
+      "rho_pharm": 0.45337225520629876
+    }
+  },
+  "threshold": 0.8
+}
