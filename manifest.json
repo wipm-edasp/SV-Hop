@@ -4,13 +4,13 @@
   "files": [
     {
       "path": ".gitattributes",
-      "bytes": 143,
-      "sha256": "c5b63b420af1ef6a9839ef25fd8bb7701c758ece0cf5cc55b26c7e929a4e46f9"
+      "bytes": 144,
+      "sha256": "e48e14ba69baf1bcb1ff811de4ed633213bc47ef91d8546971a345f36e7e8fdb"
     },
     {
       "path": ".gitignore",
-      "bytes": 453,
-      "sha256": "36f9c70ed842d3fbc527d816bd1ebcf8243d6d7c080fccd47a1d6228d1ee2b46"
+      "bytes": 45,
+      "sha256": "dfce332cbd9f9bb725cda60d9ff67a9405ba1ccaa0dde4c0dbc1afeea38c902a"
     },
     {
       "path": "artifacts/c1_validation/pairs.csv",
