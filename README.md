@@ -72,9 +72,10 @@ SI markdown are written to `out/`, which the scripts create.
 
 ## License and citation
 
-MIT (see `LICENSE`). Citation metadata in `CITATION.cff`. Archived at Zenodo; the DOI is
-recorded in `CITATION.cff` and in the Data and Software Availability statement of the
-manuscript.
+MIT (see `LICENSE`). Citation metadata in `CITATION.cff`. The release is distributed
+through this repository (tag `sv-hop-0.1.3`); no separate archive DOI has been assigned,
+so cite the repository URL together with the tag and the checksums in
+`checksums/SHA256SUMS`.
 
 ## Contact
 
